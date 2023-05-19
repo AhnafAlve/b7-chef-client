@@ -12,7 +12,7 @@ const Chefs = () => {
 
     return (
         <div className='container'>
-            <h1>This is chef {chefData.length}</h1>
+            <h2 className='text-center mt-5'>MEET OUR BEST CHEFS</h2>
             <div className='row'>
                 {
                     chefData.map(chef => <Chef
