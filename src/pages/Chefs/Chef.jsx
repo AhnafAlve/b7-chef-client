@@ -13,7 +13,7 @@ const Chef = ({ chef }) => {
                     <p className="card-text">Years of experience: {experience}</p>
                     <p className="card-text">Likes: {likes}</p>
                     <p className="card-text">Numbers of recipes: {numchefs}</p>
-                    <Link to={`chefs/${id}`} className="btn btn-success">
+                    <Link to={`/chefs/${id}`} className="btn btn-success">
                         View Recipes
                     </Link>
                 </div>
