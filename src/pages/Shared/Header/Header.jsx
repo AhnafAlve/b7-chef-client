@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css'
+import { AuthContext } from '../../../providers/AuthProvider';
 
 const Header = () => {
+
+    const {user} = useContext(AuthContext);
+
     return (
         <div>
             <Navbar bg="body-tertiary" expand="lg" className="container">
@@ -15,7 +19,18 @@ const Header = () => {
                         <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
                         <Nav.Link as={Link} to="/about">About</Nav.Link>
                     </Nav>
-                    <Button variant="success" type="submit">Login</Button>
+                    <Nav>
+                        {
+                            user && <Link href='#'>{user.displayName}</Link>
+                        }
+
+                        {user ?
+                            <Button variant="success" type="submit">Logout</Button> :
+                            <Link to='/login'>
+                                <Button variant="success" type="submit">Login</Button>
+                            </Link>
+                        }
+                    </Nav>
                 </Navbar.Collapse>
             </Navbar>
         </div>
