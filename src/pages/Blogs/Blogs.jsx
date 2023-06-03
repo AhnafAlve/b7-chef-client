@@ -3,8 +3,8 @@ import React from 'react';
 const Blogs = () => {
     return (
         <div className="container w-50 vh-100">
-            <h1 className="mb-4">Frontend Blogs:</h1>
-            <div className="card bg-info mb-4">
+            <h1 className="mb-4 text-center">Blogs:</h1>
+            <div className="card mb-4">
                 <div className="card-body">
                     <h2 className="card-title">Question 1: Differences between uncontrolled and controlled components</h2>
                     <p className="card-text">
@@ -13,7 +13,7 @@ const Blogs = () => {
                 </div>
             </div>
 
-            <div className="card bg-warning mb-4">
+            <div className="card mb-4">
                 <div className="card-body">
                     <h2 className="card-title">Question 2: How to validate React props using PropTypes</h2>
                     <p className="card-text">
@@ -22,7 +22,7 @@ const Blogs = () => {
                 </div>
             </div>
 
-            <div className="card bg-info mb-4">
+            <div className="card mb-4">
                 <div className="card-body">
                     <h2 className="card-title">Question 3: Difference between Node.js and Express.js</h2>
                     <p className="card-text">
@@ -31,7 +31,7 @@ const Blogs = () => {
                 </div>
             </div>
 
-            <div className="card bg-warning mb-4">
+            <div className="card mb-4">
                 <div className="card-body">
                     <h2 className="card-title">Question 4: What is a custom hook, and why will you create a custom hook?</h2>
                     <p className="card-text">
