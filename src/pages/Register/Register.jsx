@@ -25,7 +25,11 @@ const Register = () => {
             setError('Password should be at least 6 characters long');
             return;
         }
+        setName('');
         setError('');
+        setEmail('');
+        setPassword('');
+        setPhotoURL('');
 
         // Proceed with registration logic
         console.log(name, email, password);
@@ -99,14 +103,6 @@ const Register = () => {
                             <button type="submit" className="btn btn-primary btn-lg">Register</button>
                         </div>
 
-                        <div className="d-flex flex-column flex-md-row gap-2">
-                            <button className="btn btn-outline-danger btn-lg flex-grow-1">
-                                <FaGoogle className="me-2" /> Register with Google
-                            </button>
-                            <button className="btn btn-outline-dark btn-lg flex-grow-1">
-                                <FaGithub className="me-2" /> Register with GitHub
-                            </button>
-                        </div>
                         <p className="text-center my-4">Already have an account? <Link to='/login'>Login here</Link>.</p>
                     </form>
                 </div>

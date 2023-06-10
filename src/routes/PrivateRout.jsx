@@ -6,11 +6,16 @@ import { Spinner } from 'react-bootstrap';
 const PrivateRout = ({ children }) => {
     const { user, loading } = useContext(AuthContext);
     const location = useLocation();
-    console.log(location);
+    // console.log(location);
 
     if (loading) {
-        return <Spinner animation="border" variant="success" />
+        return (
+            <div className="d-flex justify-content-center align-items-center vh-100">
+                <Spinner animation="border" variant="primary" />
+            </div>
+        )
     }
+
     if (user) {
         return children;
     }

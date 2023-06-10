@@ -36,7 +36,7 @@ const TopRecipes = () => {
                                 <strong>Rating:</strong> 4.6
                             </Card.Text>
                             <Button
-                                variant="primary"
+                                variant="success"
                                 disabled={favoriteIndex === 0}
                                 onClick={() => handleFavoriteClick(0)}
                             >
@@ -66,7 +66,7 @@ const TopRecipes = () => {
                                 <strong>Rating:</strong> 4.4
                             </Card.Text>
                             <Button
-                                variant="primary"
+                                variant="success"
                                 disabled={favoriteIndex === 1}
                                 onClick={() => handleFavoriteClick(1)}
                             >
@@ -96,7 +96,7 @@ const TopRecipes = () => {
                                 <strong>Rating:</strong> 4.7
                             </Card.Text>
                             <Button
-                                variant="primary"
+                                variant="success"
                                 disabled={favoriteIndex === 2}
                                 onClick={() => handleFavoriteClick(2)}
                             >

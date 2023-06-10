@@ -1,23 +1,60 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import { FaFacebookF, FaTwitter, FaInstagram, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="bg-dark text-light py-3 mt-5">
-            <Container>
-                <Row>
-                    <Col md={6}>
-                        <p className="mb-0">© 2023 My Restaurant. All rights reserved.</p>
-                    </Col>
-                    <Col md={6} className="d-flex justify-content-end">
-                        <ul className="list-inline mb-0">
-                            <li className="list-inline-item"><a href="/" className="text-light">Terms of Use</a></li>
-                            <li className="list-inline-item"><a href="/" className="text-light">Privacy Policy</a></li>
-                            <li className="list-inline-item"><a href="/" className="text-light">Contact Us</a></li>
+        <footer className="footer bg-dark text-light py-5 mt-5">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-4 col-md-6 mb-4 mb-md-0 ">
+                        <h4>About Us</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus dolor id est vestibulum, eget commodo orci ultricies.
+                        </p>
+                    </div>
+                    <div className="col-lg-4 col-md-6 text-center">
+                        <h4>Contact Information</h4>
+                        <ul className="list-unstyled">
+                            <li>
+                                <FaEnvelope className="me-2" />
+                                example@example.com
+                            </li>
+                            <li>123 Main Street, City</li>
+                            <li>Country, Postal Code</li>
                         </ul>
-                    </Col>
-                </Row>
-            </Container>
+                    </div>
+                    <div className="col-lg-4 text-center">
+                        <h4>Connect With Us</h4>
+                        <ul className="list-inline">
+                            <li className="list-inline-item">
+                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-light me-3">
+                                    <FaFacebookF />
+                                </a>
+                            </li>
+                            <li className="list-inline-item">
+                                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-light me-3">
+                                    <FaTwitter />
+                                </a>
+                            </li>
+                            <li className="list-inline-item">
+                                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-light me-3">
+                                    <FaLinkedin />
+                                </a>
+                            </li>
+                            <li className="list-inline-item">
+                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-light">
+                                    <FaInstagram />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="row mt-5">
+                    <div className="col-12 text-center">
+                        <p className="mb-0">© 2023 My Restaurant. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
         </footer>
     );
 };
