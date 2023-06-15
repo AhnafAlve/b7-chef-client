@@ -1,0 +1,23 @@
+.online-order {
+    background-image: url('https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+    background-attachment: fixed;
+}
+
+.online-order h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.online-order p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
