@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className="col-lg-4 col-md-6 mb-4 mb-md-0 ">
                         <h4>About Us</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus dolor id est vestibulum, eget commodo orci ultricies.
+                        We make our own buttery pie crust from scratch and use a blend of herbs and spices to season the filling. The result is a rich, savory pie that's perfect for a cozy night in
                         </p>
                     </div>
                     <div className="col-lg-4 col-md-6 text-center">

@@ -1,9 +1,17 @@
 import React from 'react';
+import html2pdf from 'html2pdf.js';
 
 const Blogs = () => {
+    const handleDownload = () => {
+        const element = document.getElementById('blogs-container');
+        html2pdf()
+            .from(element)
+            .save('blogs.pdf');
+    };
+
     return (
-        <div className="container w-50">
-            <h1 className="mb-4 text-center text-success card bg-dark">BLOGS</h1>
+        <div id="blogs-container" className="container w-75">
+            <h1 className="mb-4 text-center text-success card bg-dark mt-3">BLOGS</h1>
             <div className="card mb-4">
                 <div className="card-body">
                     <h2 className="card-title text-warning">Question 1: Differences between uncontrolled and controlled components</h2>
@@ -39,9 +47,11 @@ const Blogs = () => {
                     </p>
                 </div>
             </div>
+            <button className="btn btn-success mt-1" onClick={handleDownload}>
+                Download PDF
+            </button>
         </div>
     );
 };
-
 
 export default Blogs;
